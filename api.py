@@ -102,9 +102,9 @@ if __name__ == '__main__':
     app.config['API'] = API()
     if getenv('DEBUG'):
         app.config['DEBUG'] = True
-        flask_port = 5800
+        flask_port = 5858
         app.run(host='0.0.0.0', port=flask_port)
     else:
         app.config['DEBUG'] = False
-        flask_port = 6800
+        flask_port = 6868
         WSGIServer(('', flask_port), app).serve_forever()

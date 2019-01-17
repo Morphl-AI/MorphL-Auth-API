@@ -21,7 +21,7 @@ spec:
           command: ["bash", "/opt/auth/runapi.sh"]
           imagePullPolicy: Never
           ports:
-            - containerPort: 6800
+            - containerPort: 6868
               protocol: TCP
           envFrom:
             - configMapRef:
