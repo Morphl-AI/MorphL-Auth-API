@@ -10,6 +10,6 @@ spec:
   ports:
     - port: 80
       protocol: TCP
-      targetPort: 6868
+      targetPort: 6800
   selector:
     run: auth
